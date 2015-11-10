@@ -165,7 +165,6 @@ module.exports = {
             defer: true,
             fn: function (done) {
                 var command = 'sass -C --sourcemap=none ' + scssFile;
-                var dir = __dirname;
                 exec('bundle exec ' + command,
                     function (error, stdout, stderr) {
                         if ( error ) throw stderr;
